@@ -1,5 +1,27 @@
 baseURL = 'https://blog.antontobi.com'
 languageCode = 'en-us'
-title = 'antonTobi
+title = 'antonTobi'
 theme = 'PaperMod'
 
+[outputFormats]
+	[outputFormats.SearchIndex]
+		mediaType = "application/json"
+		baseName = "index"
+		isPlainText = true
+		notAlternative = true
+
+[outputs]
+	home = ["HTML", "RSS", "SearchIndex"]
+
+[params]
+	disableSpecial1stPost = true
+	disableThemeToggle = true
+	[params.search]
+		enable = true
+		# fuseOpts = { isCaseSensitive = false, shouldSort = true, location = 0, distance = 100, threshold = 0.3, minMatchCharLength = 2 }
+
+[menu]
+	[[menu.main]]
+		name = "Search"
+		url = "/search/"
+		weight = 1

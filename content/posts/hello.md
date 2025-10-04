@@ -4,6 +4,4 @@ draft = false
 title = 'Hello'
 +++
 
-# Hello
-
 Welcome to my blog!
